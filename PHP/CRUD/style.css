@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #761c76 50%, #181824 50%);
+}
+
+table {
+  width: 500px;
+  text-align: center;
+  background-color: #2d3255;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+table.show {
+  width: 70rem;
+}
+
+h1,
+th {
+  font-weight: 700;
+  color: #f6f1e9;
+}
+
+td,
+a {
+  color: #f6f1e9;
+}
+
+input {
+  width: 80%;
+  border-radius: 7px;
+  padding: 5px 5px;
+  background-color: #181824;
+  color: #f6f1e9;
+  border: 2px solid #761c76;
+}
+
+input[type="radio"] {
+  width: 15px;
+}

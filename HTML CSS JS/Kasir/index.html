@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>kasir</title>
+  </head>
+  <body>
+    <form name="frmaplksiibrg">
+      <table width="40" height="50%" align="center" border="0">
+        <tr>
+          <td class="heading" colspan="3" align="center">Form Aplikasi Kasir</td>
+        </tr>
+        <tr class="spacing">
+          <td>Masukan Kode Barang</td>
+          <td>:</td>
+          <td>
+            <input type="textbox" name="txtkdbrg" value="" size="20" maxlength="60%" />
+            <input type="submit" name="cmdcari" value="Cari" onclick="validasi()" />
+            <input type="submit" name="cmdbatal" value="batal" />
+          </td>
+        </tr>
+        <tr class="spacing">
+          <td>Nama Barang</td>
+          <td>:</td>
+          <td><input type="textbox" name="txtnmbrg" value="" size="20" maxlength="60%" /></td>
+        </tr>
+        <tr class="spacing">
+          <td>Harga Barang</td>
+          <td>:</td>
+          <td><input type="textbox" name="txthrgbrg" value="" size="20" maxlength="60%" /></td>
+        </tr>
+        <tr>
+          <td>Jumlah Barang</td>
+          <td>:</td>
+          <td><input type="textbox" name="txtjmlbrg" value="" size="20" maxlength="60%" /></td>
+        </tr>
+
+        <tr class="spacing">
+          <td>Total</td>
+          <td>:</td>
+          <td>
+            <input type="textbox" name="txtttlbrg" value="" size="20" maxlength="60%" />
+            <input type="submit" name="cmdcari" value="Proses" onclick="validasi()" />
+          </td>
+        </tr>
+        <tr class="spacing">
+          <td>Bayar</td>
+          <td>:</td>
+          <td><input type="textbox" name="txtbyrbrg" value="" size="20" maxlength="60%" /></td>
+        </tr>
+        <tr class="spacing">
+          <td>Kembali</td>
+          <td>:</td>
+          <td>
+            <input type="textbox" name="txtkmblbrg" value="" size="20" maxlength="60%" />
+            <input type="submit" name="cmdcari" value="Hitung" onclick="hitungKembalian()" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      function validasi() {
+        var x = new Array(4);
+        x[0] = "Buku Tulis";
+        x[1] = "Pensil";
+        x[2] = "Penggaris";
+        x[3] = "Penghapus";
+        x[4] = "Spidol";
+
+        var y = new Array(4);
+        y[0] = "3000";
+        y[1] = "2000";
+        y[2] = "1000";
+        y[3] = "5000";
+        y[4] = "5000";
+
+        var kd = document.frmaplksiibrg.txtkdbrg.value;
+        if (kd == "B001" || kd == "b001") {
+          document.frmaplksiibrg.txtnmbrg.value = x[0];
+          document.frmaplksiibrg.txthrgbrg.value = y[0];
+          return false;
+        }
+        if (kd == "B002" || kd == "b002") {
+          document.frmaplksiibrg.txtnmbrg.value = x[1];
+          document.frmaplksiibrg.txthrgbrg.value = y[1];
+          return false;
+        }
+        if (kd == "B003" || kd == "b003") {
+          document.frmaplksiibrg.txtnmbrg.value = x[2];
+          document.frmaplksiibrg.txthrgbrg.value = y[2];
+          return false;
+        }
+        if (kd == "B004" || kd == "b004") {
+          document.frmaplksiibrg.txtnmbrg.value = x[3];
+          document.frmaplksiibrg.txthrgbrg.value = y[3];
+          return false;
+        }
+        if (kd == "B005" || kd == "b005") {
+          document.frmaplksiibrg.txtnmbrg.value = x[4];
+          document.frmaplksiibrg.txthrgbrg.value = y[4];
+          return false;
+        }
+        {
+          console.log("error");
+        }
+      }
+      function hitung() {
+        var harga = document.frmaplksiibrg.txthrgbrg.value;
+        var jumlah = document.frmaplksiibrg.txtjmlbrg.value;
+        var result = harga * jumlah;
+        document.frmaplksiibrg.txtttlbrg.value = result;
+        return false;
+      }
+      function hitungKembalian() {
+        var bayar = document.frmaplksiibrg.txtbyrbrg.value;
+        var jumtot = document.frmaplksiibrg.txtttlbrg.value;
+        var result = bayar - jumtot;
+        document.frmaplksiibrg.txtkmblbrg.value = result;
+        return false;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+a {
+  color: #000000;
+}
+a > i:hover,
+a > .material-symbols-outlined:hover {
+  color: red;
+}
+a > i {
+  font-size: 20px;
+}
+a > .control {
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1000px;
+  gap: 1rem;
+  padding: 1rem;
+}
+.human {
+  font-size: 50px;
+}
+.main-header {
+  margin: 1rem 0;
+}
+.logo-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 15px;
+}
+main:hover {
+  box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.27);
+  transform: scale(1.05);
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.input > button {
+  color: black;
+  border-radius: 0;
+  background-color: inherit;
+  border: 3px solid black;
+  font-weight: 700;
+}
+.bx-detail {
+  font-size: 20px;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+}
+
+.subheader {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+}
+
+.header,
+.subheader {
+  margin: 1rem 0 1rem 0;
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 700px;
+  }
+  .main-header {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container {
+    width: 500px;
+  }
+}

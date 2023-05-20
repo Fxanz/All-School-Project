@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #645cbb;
+  font-family: "Unbounded", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 500px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.container > h1 {
+  margin-bottom: 0.5rem;
+  color: #645cbb;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.user,
+.pass,
+.gmail,
+.confirm-gmail {
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  background-color: #f6f6f6;
+  margin: 0.5rem 0;
+  padding: 0.8em;
+  outline: none;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.user::placeholder {
+  color: gray;
+}
+
+.pass::placeholder {
+  color: gray;
+}
+
+.button-container {
+  background-color: #645cbb;
+  border-radius: 20px;
+}
+
+.button-container input {
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  background-color: #645cbb;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.old-acc {
+  margin-top: 0.5rem;
+}
+.old-acc h5 {
+  text-align: center;
+}
+
+@media screen and (max-width: 445px) {
+  .container > h1 {
+    font-size: 25px;
+  }
+
+  body {
+    padding: 0 20px;
+  }
+
+  .user,
+  .pass,
+  .gmail,
+  .confirm-gmail {
+    width: 15rem;
+  }
+
+  .button-container input {
+    width: 15rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .container > h1 {
+    font-size: 20px;
+  }
+
+  .user,
+  .pass,
+  .gmail,
+  .confirm-gmail {
+    width: 10rem;
+  }
+
+  .button-container input {
+    width: 10rem;
+  }
+  .new-acc {
+    font-size: 13px;
+  }
+}
