@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>WDC Admin Panel</title>
     <link rel="stylesheet" href="./src/style/global.css" />
+    <link rel="stylesheet" href="./src/style/reset.css">
   </head>
   <body>
     
