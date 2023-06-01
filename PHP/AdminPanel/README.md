@@ -1,4 +1,5 @@
 # WDC Admin Panel
+WDC Admin Panel adalah sebuah website admin panel yang memudahkan pengguna dalam mengelola data siswa. Dengan fitur login dan register, pengguna dapat mengakses dua bagian utama dari admin panel, yaitu menjelaskan tentang proyek yang dibuat dan mengelola data siswa melalui fitur CRUD. Dengan antarmuka yang intuitif dan fitur yang kuat, WDC Admin Panel membantu pengguna dalam mengedit, menghapus, menambahkan, dan melihat data siswa dengan efisien dan efektif.
 
 ## Table of contents
 

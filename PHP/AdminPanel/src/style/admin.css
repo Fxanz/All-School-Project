@@ -68,6 +68,5 @@ main {
 }
 .content p{
   text-align: justify;
-  max-width: 700px;
-  margin: 20px 0;
+  margin: 20px;
 }
