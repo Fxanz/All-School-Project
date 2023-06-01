@@ -22,7 +22,7 @@
 
 ## My process
 
-![](./src/assets/images/progress.jpg)
+![](./src/assets/images/progress.jpeg)
 
 ### Built with
 
