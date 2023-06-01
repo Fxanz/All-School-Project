@@ -90,3 +90,6 @@ main {
 .table-header{
   margin: 20px 0;
 }
+td a{
+  color: var(--white);
+}
