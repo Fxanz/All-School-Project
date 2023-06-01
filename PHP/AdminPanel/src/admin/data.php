@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
+    <title>Data panel</title>
     <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/admin.css">
+    <link rel="stylesheet" href="../style/data.css">
 </head>
 <body>
     <main>
@@ -48,8 +48,10 @@
             </div>
         </div>
         <div class="content">
-            <h1>Halo <?= $rw['nama']; ?></h1>
-            <p>Saya ida bagus yoga dharma putra, orang yang membuat website ini website ini dibuat untuk tugas ekstra Web Design Club(WDC) Website ini berisi login, register, dan CRUD untuk data member</p>
+            <h1>All Student</h1>
+            <a href="input.php">
+            <button>Input Data</button>
+            </a>
         </div>
     </main>
 </body>
