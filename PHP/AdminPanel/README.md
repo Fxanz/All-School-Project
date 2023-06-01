@@ -23,6 +23,7 @@
 ## My process
 
 ![](./src/assets/images/progress.jpeg)
+![](./src/assets/images/figmaproject.jpeg)
 
 ### Built with
 
