@@ -62,3 +62,31 @@ main {
   padding: 2rem;
   flex: 5;
 }
+.content h1{
+  font-weight: bold;
+  font-size: var(--font-large);
+}
+.content button{
+  border: none;
+  font-size: var(--font-medium);
+  color: var(--white);
+  background-color: var(--gray);
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.content table{
+  width: 100%;
+  text-align: center;
+  border: 3px solid var(--gray);
+  border-radius: 10px;
+  padding: 30px 50px;
+  font-size: var(--font-medium);
+}
+.content table tr th{
+  font-weight: bold;
+}
+.table-header{
+  margin: 20px 0;
+}

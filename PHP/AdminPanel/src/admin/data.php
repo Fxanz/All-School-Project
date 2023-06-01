@@ -1,5 +1,6 @@
 <?php
     include 'control.php';
+    include '../php/connection.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,6 +53,33 @@
             <a href="input.php">
             <button>Input Data</button>
             </a>
+            <table class="show">
+        <tr class="table-header">
+            <th>Nomer</th>
+            <th>Nama</th>
+            <th>Kelamin</th>
+            <th>Kelas</th>
+            <th>Jurusan</th>
+            <th>aksi</th>
+        </tr>
+        <?php
+        $tampil = mysqli_query($koneksi, "SELECT * FROM siswa");
+        $no = 1;
+        while ($hasil = mysqli_fetch_array($tampil)) {
+
+        ?>
+            <tr>
+                <td><?php echo $no++ ?></td>
+                <td><?php echo $hasil['nama']; ?></td>
+                <td><?php echo $hasil['kelamin']; ?></td>
+                <td><?php echo $hasil['kelas']; ?></td>
+                <td><?php echo $hasil['jurusan']; ?></td>
+                <td>
+                    <a href="./edit.php?id=<?php echo $hasil['id']; ?>">EDIT</a> | <a href="../php/delete.php?id=<?php echo $hasil['id']; ?>">DELETE
+                </td>
+            </tr>
+        <?php } ?>
+    </table>
         </div>
     </main>
 </body>
