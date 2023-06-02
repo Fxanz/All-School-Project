@@ -19,7 +19,7 @@ WDC Admin Panel adalah sebuah website admin panel yang memudahkan pengguna dalam
 
 ### Links
 
-- Live Site URL: [Live Site](https://wdc-admin-panel.000webhostapp.com)
+- Live Site URL: [Live Site](https://testing-admin-pages-entah-buat-apa.000webhostapp.com)
 
 ## My process
 
