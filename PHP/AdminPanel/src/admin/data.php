@@ -25,14 +25,12 @@
                 <div class="links">
                     <a href="./admin.php">
                     <div class="link">
-                        <img src="../assets/images/Home.svg" alt="Home Logo" width="40px" height="40px">
-                        <h2>Home</h2>
+                        <img src="../assets/images/Home.svg" alt="Home Logo" width="30px" height="30px">
                     </div>
                     </a>
                     <a href="./data.php">
                     <div class="link">
-                        <img src="../assets/images/data.svg" alt="Data Logo" width="40px" height="40px">
-                        <h2>Data</h2>
+                        <img src="../assets/images/data.svg" alt="Data Logo" width="30px" height="30px">
                     </div>
                     </a>
                    
@@ -41,8 +39,7 @@
             <div class="exit-sidebar">
                 <a href="../php/logout.php">
                     <div class="exit">
-                    <img src="../assets/images/exit.svg" alt="Exit Logo" width="40px" height="40px">
-                    <h2>Exit</h2>
+                    <img src="../assets/images/exit.svg" alt="Exit Logo" width="30px" height="30px">
                     </div>
                     
                 </a>
@@ -75,7 +72,9 @@
                 <td><?php echo $hasil['kelas']; ?></td>
                 <td><?php echo $hasil['jurusan']; ?></td>
                 <td>
+                    <div class="action-container">
                     <a href="./edit.php?id=<?php echo $hasil['id']; ?>">EDIT</a> | <a href="../php/delete.php?id=<?php echo $hasil['id']; ?>">DELETE
+                    </div>
                 </td>
             </tr>
         <?php } ?>
