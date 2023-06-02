@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-  --black: #050605;
-  --gray: #40494f;
-  --white: #eeefeb;
+  --gray: #2F2F35;
+  --light-gray : #3A3B41;
+  --white: #ffffff;
+  --purple: #4F5E9C;
 
   --font-small: 12px;
   --font-medium: 20px;
@@ -15,34 +16,38 @@
 body {
   font-family: var(--font-family);
   height: 100vh;
-  background-color: var(--black);
+  background-color: var(--gray);
   color: var(--white);
 }
+
 main {
   display: flex;
   justify-content: center;
 }
+
 .sidebar {
   flex: 1;
-  border: 5px solid var(--gray);
+  background-color: var(--purple);
   height: 100vh;
   padding: 2rem;
   border-radius: 0 20px 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0px 0px 50px 15px rgba(255, 255, 255, 0.25);
 }
+
 .header-sidebar {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .links {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .link {
   display: flex;
   gap: 30px;
@@ -51,39 +56,41 @@ main {
   font-weight: bold;
   align-items: center;
   justify-content: center;
-  background-color: var(--gray);
+  background-color: #434f81;
   padding: 10px 0;
   border-radius: 5px;
 }
+
 .exit {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  background-color: var(--gray);
+  background-color: #434f81;
   border-radius: 5px;
   font-size: var(--font-medium);
   font-weight: bold;
   gap: 30px;
   color: var(--white);
 }
+
 .content {
   padding: 2rem;
   flex: 15;
 }
+
 .content h1{
   font-size: var(--font-large);
   font-weight: bold;
 }
+
 .content p{
   text-align: justify;
   margin: 20px;
 }
 
-
 @media (max-width: 869px) {
   .sidebar{
-    background-color: var(--gray);
     border: none;
     position: fixed;
     bottom: 0;
@@ -96,23 +103,28 @@ main {
     align-items: center;
     border-radius: 0;
   }
+
   .main-sidebar{
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+
   .links{
     display: flex;
     flex-direction: row;
   }
+
   .link{
     padding: 10px;
   }
+
   .header-sidebar{
     display: flex;
     flex-direction: row;
     display: none;
   }
+  
   .exit{
     padding: 10px;
   }

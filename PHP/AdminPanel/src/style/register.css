@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-  --black: #050605;
-  --gray: #40494f;
-  --white: #eeefeb;
+  --gray: #2F2F35;
+  --light-gray : #3A3B41;
+  --white: #ffffff;
+  --purple: #4F5E9C;
+
 
   --font-small: 12px;
   --font-medium: 20px;
@@ -19,38 +21,44 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: var(--black);
+  background-color: var(--gray);
 }
+
 .login-container {
   color: var(--white);
-  border: 5px solid var(--gray);
+  background-color: var(--light-gray);
   padding: 60px 100px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.25);
 }
+
 .input-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin: 50px 0;
 }
+
 .input-container input {
   background-color: inherit;
-  border: 3px solid var(--gray);
+  border: 3px solid var(--white);
   border-radius: 5px;
   padding: 15px 25px;
   width: 100%;
   color: white;
 }
+
 .input-container input::placeholder {
   color: white;
 }
+
 .login-container h1 {
   font-size: var(--font-large);
 }
+
 .login-container button {
-  background-color: var(--gray);
+  border: none;
+  background-color: var(--purple);
   color: var(--white);
   border-radius: 5px;
   padding: 15px 0;
@@ -58,15 +66,20 @@ body {
   width: 100%;
   margin-bottom: 10px;
 }
+
 .login-container button:hover {
   box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.25) inset;
 }
+
 .login-container p {
   font-size: var(--font-medium);
 }
+
 .login-container p a {
-  color: var(--white);
+  font-weight: bold;
+  color: var(--purple);
 }
+
 @media (max-width: 592px) {
   .login-container{
     padding: 30px 50px;

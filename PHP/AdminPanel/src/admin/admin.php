@@ -25,12 +25,12 @@
             <a href="./admin.php">
               <div class="link">
                 <img src="../assets/images/Home.svg" alt="Home Logo" width="30px" height="30px" />
-                              </div>
+              </div>
             </a>
             <a href="./data.php">
               <div class="link">
                 <img src="../assets/images/data.svg" alt="Data Logo" width="30px" height="30px" />
-                              </div>
+              </div>
             </a>
           </div>
         </div>
@@ -38,7 +38,7 @@
           <a href="../php/logout.php">
             <div class="exit">
               <img src="../assets/images/exit.svg" alt="Exit Logo" width="30px" height="30px" />
-                          </div>
+            </div>
           </a>
         </div>
       </div>
