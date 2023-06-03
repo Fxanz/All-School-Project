@@ -26,7 +26,7 @@ WDC Admin Panel adalah sebuah website admin panel yang memudahkan pengguna dalam
 ![](./src/assets/images/progress.jpeg)
 ![](./src/assets/images/figmaproject.jpeg)
 
-### Built with
+## Built with
 
 - PHP
 - Semantic HTML5 markup
