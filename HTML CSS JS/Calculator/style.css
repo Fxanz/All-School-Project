@@ -111,18 +111,6 @@ button:focus {
   font-size: 1.3em;
 }
 
-.img-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0 0 0;
-}
-
-.img-container img {
-  border-radius: 20px;
-  border: 2px solid #c69749;
-}
 @media screen and (max-width: 460px) {
   #input1,
   #input2 {
@@ -148,8 +136,5 @@ button:focus {
 
   .button-container > button {
     height: 35px;
-  }
-  .img-container > h1 {
-    font-size: 1rem;
   }
 }
