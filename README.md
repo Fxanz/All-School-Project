@@ -4,7 +4,7 @@ Welcome to the All-School-Project  repository! This repository contains a collec
 
 ## HTML/CSS/JS Projects
 
-Inside the `HTML_CSS_JS` directory, you will find the following projects developed using HTML, CSS, and JavaScript:
+Inside the `HTML CSS JAVASCRIPT` directory, you will find the following projects developed using HTML, CSS, and JavaScript:
 
 1. Calculator: A simple calculator application.
 2. Kasir: A point-of-sale system for managing sales transactions.
